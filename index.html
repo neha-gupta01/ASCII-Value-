@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASCII Value</title>
+  </head>
+  <body>
+    <p>Press a key to get its ASCII value:</p>
+    <p id="asciiValue"></p>
+    <script>
+      const asciiValue = document.getElementById("asciiValue");
+      document.addEventListener("keydown", function (event) {
+        const value = event.key.charCodeAt(0);
+        asciiValue.innerHTML = `ASCII Value: ${value}`;
+      });
+    </script>
+  </body>
+</html>
